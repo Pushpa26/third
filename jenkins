@@ -1,0 +1,18 @@
+Pipeline{
+#variables section
+stages{
+
+stage('checkout'){
+steps{
+sh "git clone <project url >"
+}
+}
+
+stage('build'){
+steps{
+ sh " mvn clean pakcage"
+}
+}
+
+}
+}
